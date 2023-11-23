@@ -26,7 +26,7 @@ We use the following hardware for our swerve drive robot:
 - 8x [SPARK MAX](https://www.revrobotics.com/rev-11-2158/) motor controllers (Two per module, drive & turn)
 - 8x [NEO Brushless](https://www.revrobotics.com/rev-21-1650/) motors (Two per module, drive & turn)
 - 4x [CTRE CANcoder](https://store.ctr-electronics.com/cancoder/) (One per module) acts as absolute encoder for the turn motor
-- 1x [CTR Pigeon 2.0](https://store.ctr-electronics.com/blog/pigeon-20-hardware-update/) (One per robot) acts as gyro for the robot to determine heading
+- 1x [CTRE Pigeon 2.0](https://store.ctr-electronics.com/blog/pigeon-20-hardware-update/) (One per robot) acts as gyro for the robot to determine heading
 - 1x [T.Flight Hotas One](https://www.thrustmaster.com/en-us/products/t-flight-hotas-one/) (One per robot) acts as controller for the driver to control the robot
 
 ## ⏳ Source Code
