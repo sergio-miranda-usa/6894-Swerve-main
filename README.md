@@ -3,7 +3,7 @@
 
 <div style="display: flex;">
   <img src="./img/img1.gif" style="width: 50%;padding:2px" alt="Image 1">
-  <img src="./img/img1.gif" style="width: 50%;padding:2px" alt="Image 2">
+  <img src="./img/img2.gif" style="width: 50%;padding:2px" alt="Image 2">
 </div>
 
 <br>**Table Of Contents:**
