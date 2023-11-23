@@ -118,7 +118,7 @@ public final class Constants {
     }
 
     public static final class OIConstants {
-        // Port for the driver's controller (Thrust Master)
+        // Port for the driver's controller 
         public static final int kDriverControllerPort = 0;
         // Axis used for the X, Y, Rotation, and Throttle
         public static final int kDriverYAxis = 1;
