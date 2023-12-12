@@ -54,7 +54,7 @@ public class SwerveSubsystem extends SubsystemBase {
             DriveConstants.kBackRightDriveAbsoluteEncoderReversed,
             "Back Right");
 
-    //Pigeon2 is CTR gyro module 
+    //Pigeon2 is CTRE gyro module 
     private final Pigeon2 gyro = new Pigeon2(frc.robot.Constants.DriveConstants.kPigeonPort);
     
     private final SwerveDriveOdometry odometer = new SwerveDriveOdometry(DriveConstants.kDriveKinematics,

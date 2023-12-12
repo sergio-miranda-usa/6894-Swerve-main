@@ -70,6 +70,9 @@ public class SwerveJoystickCmd extends CommandBase {
         xSpeed = xLimiter.calculate(xSpeed) * DriveConstants.kTeleDriveMaxSpeedMetersPerSecond;
         ySpeed = yLimiter.calculate(ySpeed) * DriveConstants.kTeleDriveMaxSpeedMetersPerSecond;
 
+        System.out.println("xSpeed: " + xSpeed);
+        System.out.println("ySpeed: " + ySpeed);
+
         // Slow turning speed on true of slowTurn button boolean supplier
         turningSpeed = turningLimiter.calculate(turningSpeed) * DriveConstants.kTeleDriveMaxAngularSpeedRadiansPerSecond;
 
