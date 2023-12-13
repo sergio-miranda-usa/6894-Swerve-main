@@ -19,7 +19,7 @@ public final class Constants {
         public static final double kDriveEncoderRPM2MeterPerSec = kDriveEncoderRot2Meter / 60;
         public static final double kTurningEncoderRPM2RadPerSec = kTurningEncoderRot2Rad / 60;
         //The P value for the turning PID loop
-        public static final double kPTurning = 0.2; //0.2
+        public static final double kPTurning = 0.4; //0.2
     }
 
     public static final class DriveConstants {
@@ -94,8 +94,8 @@ public final class Constants {
         // Robot turning speed
         public static final double kPhysicalMaxAngularSpeedRadiansPerSecond = 5 * Math.PI;
 
-        public static final double kTeleDriveMaxSpeedMetersPerSecond = kPhysicalMaxSpeedMetersPerSecond / 8;
-        public static final double kTeleDriveMaxAngularSpeedRadiansPerSecond = kPhysicalMaxAngularSpeedRadiansPerSecond / 8;  // Slowed down for testing
+        public static final double kTeleDriveMaxSpeedMetersPerSecond = kPhysicalMaxSpeedMetersPerSecond;
+        public static final double kTeleDriveMaxAngularSpeedRadiansPerSecond = kPhysicalMaxAngularSpeedRadiansPerSecond;  // Slowed down for testing
         public static final double kTeleDriveMaxAccelerationUnitsPerSecond = 3;
         public static final double kTeleDriveMaxAngularAccelerationUnitsPerSecond = 3;
     }
