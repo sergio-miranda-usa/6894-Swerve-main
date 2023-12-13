@@ -2,6 +2,7 @@ package frc.robot;
 
 import java.util.List;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.controller.ProfiledPIDController;
 import edu.wpi.first.math.geometry.Pose2d;
@@ -27,14 +28,15 @@ public class RobotContainer {
     private final SwerveSubsystem swerveSubsystem = new SwerveSubsystem();
 
     private final Joystick driverJoytick = new Joystick(OIConstants.kDriverControllerPort);
+    private final XboxController xboxController = new XboxController(OIConstants.kXboxControllerPort);
 
     public RobotContainer() {
         swerveSubsystem.setDefaultCommand(new SwerveJoystickCmd(
                 swerveSubsystem,
-                () -> -driverJoytick.getRawAxis(OIConstants.kDriverYAxis),
-                () -> -driverJoytick.getRawAxis(OIConstants.kDriverXAxis),
-                () -> -driverJoytick.getRawAxis(OIConstants.kDriverRotAxis),
-                () -> !driverJoytick.getRawButton(OIConstants.kDriverFieldOrientedButtonIdx),
+                () -> -xboxController.getRawAxis(OIConstants.kDriverYAxis),
+                () -> -xboxController.getRawAxis(OIConstants.kDriverXAxis),
+                () -> -xboxController.getRawAxis(OIConstants.kDriverRotAxis),
+                () -> !xboxController.getRawButton(OIConstants.kDriverFieldOrientedButtonIdx),
                 () -> driverJoytick.getRawAxis(OIConstants.kDriverThrottleAxis),
                 () -> driverJoytick.getRawButton(OIConstants.kDriverSlowTurnButtonIdx)
                 ));
