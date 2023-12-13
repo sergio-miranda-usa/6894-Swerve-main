@@ -120,10 +120,11 @@ public final class Constants {
     public static final class OIConstants {
         // Port for the driver's controller 
         public static final int kDriverControllerPort = 0;
+        public static final int kXboxControllerPort = 1;
         // Axis used for the X, Y, Rotation, and Throttle
         public static final int kDriverYAxis = 1;
         public static final int kDriverXAxis = 0;
-        public static final int kDriverRotAxis = 2;
+        public static final int kDriverRotAxis = 4;
         public static final int kDriverThrottleAxis = 3;
         // Deadband for the controller
         public static final double kDeadband = 0.2;
